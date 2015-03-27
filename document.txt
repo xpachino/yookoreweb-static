@@ -1,0 +1,10 @@
+//Update as at 27/3/2015//
+
+Files Updated.
+
+1) userprofile.php
+2) userprofile.css
+3) Blog_full_view.php
+4) includes/blog-post.htm
+
+The stream.php requires the blog-post.htm as a blog post on the activity stream.
