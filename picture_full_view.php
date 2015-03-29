@@ -27,7 +27,7 @@
      	<div class="activity-stream-wrapper">
         	<div class="activity-card" style="padding:0 15px;">
     <div style="padding:10px 0px;"><span style="font-size:18px; font-weight:700;">Mobile Uploads</span><br>
-<a href="#">Back to Album · Paul's Photos · Paul's Timeline</a></div>
+<a href="my_photos.php">Back to Album</a> · <a href="my_photos_in.php">Paul's Photos</a> · <a href="userprofile.php">Paul's Timeline</a></div>
    <!--Video in post-->
    			<div class="photo-full-wrapper">
    				<div class="photo-in-status-update" style="background:#ccc;">

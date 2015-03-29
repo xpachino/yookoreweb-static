@@ -8,3 +8,13 @@ Files Updated.
 4) includes/blog-post.htm
 
 The stream.php requires the blog-post.htm as a blog post on the activity stream.
+
+/////////////////11:51pm GMT +1////////////
+
+New Files added.
+
+1) search.php
+2) css/search.css
+3) search_full_view.php
+
+Search.css should be in the css folder.

@@ -3,10 +3,11 @@
 
 body {background:#eee; font-family:Arial, Helvetica, sans-serif; font-size:14px; margin:0px;}
 
+/*body.my_photos_in a.my_photos_in, body.articles a.articles, body.blog a.blog {border-bottom:3px solid #f60;}*/
+
 .container{width:100%; max-width:1140px; margin:0 auto; padding:0;}
 .row {margin-left: 0px; margin-right: 0px;
 }
-
 
 a:active,a:hover{outline:0}
 .clear{clear:both;}
@@ -103,6 +104,7 @@ border-color: #ddd;
 border-right:2px solid #f60;
 }
 
+.link{}
 
 .nav>li>a {
 position: relative;

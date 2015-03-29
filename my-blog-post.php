@@ -7,19 +7,21 @@
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="css/onboard.css" rel="stylesheet" type="text/css">
 <link href="css/profile2.css" rel="stylesheet" type="text/css">
-
+<link href="css/userprofile.css" rel="stylesheet" type="text/css">
 <link href="css/my_photos.css" rel="stylesheet" type="text/css">
-
 <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
 <!-- CSS to style the file input field as button and adjust the Bootstrap progress bars -->
 <link rel="stylesheet" href="css/jquery.fileupload.css">
 <link rel="stylesheet" href="css/jquery.fileupload-ui.css">
 <!-- CSS adjustments for browsers with JavaScript disabled -->
-<title>My Photos - Albums</title>
+<title>My Blog Post</title>
 <noscript><link rel="stylesheet" href="css/jquery.fileupload-noscript.css"></noscript>
 <noscript><link rel="stylesheet" href="css/jquery.fileupload-ui-noscript.css"></noscript>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!--new scripts-->
+<link href="css/pix-modal.css" rel="stylesheet" type="text/css">
+<link href="css/search.css" rel="stylesheet" type="text/css">
+
 <link rel="stylesheet" href="https://rawgit.com/dbtek/angular-aside/master/dist/css/angular-aside.min.css" />
 <script src="https://code.angularjs.org/1.2.21/angular.js"></script>
 <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-0.11.0.min.js"></script>
@@ -37,30 +39,134 @@
     };
   });
     </script>
+<script src="js/caption.js" type="text/javascript"></script>
 <!--new scritp ends-->
 </head>
 
-<body class="my_photos_in" ng-controller="MainCtrl">
+<body class="my_blog" ng-controller="MainCtrl">
 <?php require("includes/head.php") ?>
 <!--container ends-->
+</div>
 <div class="container">
 <div class="row">
 <?php require("includes/cover-profile.php") ?>
 </div>
 <div class="row xtra-pad">
 <!--left column-->
-	 <div class="mp-left-col">
-     <!--user details-->
-   	   <!--side menu-->
+<div class="col-lg-3 col-md-3 col-sm-3 left-col">
+<!--side menu-->
      	<div class="side-menu-wrapper" style="background:none !important;">
         <div class="list-group">
-            <a href="my_photos.php" class="list-group-item active"><span class="list-group-icons"><img src="img/icons/blogs.png" width="18"></span>Albums</a>
-            <a href="my_photos_pu.php" class="list-group-item"><span class="list-group-icons"><img src="img/icons/profile.png" width="18"></span> Photos of You</a>
-            <a href="my_photos_in.php" class="list-group-item"><span class="list-group-icons"><img src="img/icons/photo.png" width="18"></span>Your Photos</a>
+        	<a href="my_blog.php" class="list-group-item"><span class="list-group-icons"><img src="img/icons/profile.png" width="18"></span>All Blog Post</a>
+        	<a href="my-blog-post.php" class="list-group-item  active"><span class="list-group-icons"><img src="img/icons/blogs.png" width="18"></span>My Blog Post</a>
+            <a href="create-blog-post.php" class="list-group-item"><span class="list-group-icons"><img src="img/icons/blogs.png" width="18"></span>New Blog Post</a>
+            <a href="#" class="list-group-item disabled"><span class="list-group-icons"><img src="img/icons/photo.png" width="18"></span>Friends Blog</a>
+            <a href="#" class="list-group-item disabled"><span class="list-group-icons"><img src="img/icons/photo.png" width="18"></span>Promote Blog</a>
         </div>
         </div> 
-        <div class="col-sm-cards">
+
+<!--about user ends-->
+     <!--user details-->
+   	   <div class="col-sm-cards">	
+       
+       </div>
+     </div><!--left column ends-->
+
+<!--middle column starts-->
+     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 center-col">
+     <!--sub menu-->
+     <div class="search-nav-wrapper show-div">
+     <ul class="cover-nav">
+            <li><a href="my_blog.php">All</a></li>
+            <li class="active"><a href="my-blog-post.php">My Blog Post</a></li>
+            <li><a href="create-blog-post-full.php">New Blog Post</a></li>
+       </ul>
+       <div class="clear"></div>
+     </div>
+<!--blog post card1 starts-->
+     	<div class="activity-stream-wrapper">
+        	<div class="activity-card">
+    <!--blog post header starts-->
+            <div class="activity-header">
+            	<div class="content-owner-pix"><img src="img/pix.png" width="100%"></div>
+                <div class="content-owner-wrapper">
+                	<div class="content-owner-name">Paul Imisi</div>
+                <div class="status-update-timestamp" style="margin-left:0px;">2hours ago</div>
+                </div>
+            <div class="clear"></div>
+            </div>
+   <!--blog post header stops-->
+   <a href="blog_full_view.php" style="padding:0 0 7px 0; font-weight:bold; font-size:22px; color:#000;">This is my blog title: what a day!!!</a>
+      <!--remove comment tag only if blog has a photo in post-->
+   			<div class="photo-in-post-wrapper">
+   				<div class="photo-in-status-update">
+                <img class="img-responsive" style="vertical-align:middle" src="img/uploads/hazard.png">
+                </div>
+            </div>
+            <div class="text-content">
+            The project "Women For Change Initiative" was established in 2010 to sensitise, empower and mobilise women to participate actively in governance.
+			</div>
+             <!--content stats-->
+            <div class="content-stats-wrapper">
+            	<div class="content-stats">82 Likes <span style="margin:0 5px" class="glyphicon glyphicon-asterisk"></span>14 Comments</div>
+            	<div class="clear"></div>
+            </div>
+            <!--interactin bar-->
+            <div class="interaction-bar">
+            	<ul class="list-inline">
+                    <li><span><img src="img/icons/like.png" width="18" ></span> Like</li>
+                    <li><span><img src="img/icons/comment.png" width="18" ></span> Comment</li>
+                    <li><span><img src="img/icons/share.png" width="18" ></span> Share</li>
+            	</ul>
+            </div>
+          
+            </div>
         </div>
+<!--blog post card1 ends-->
+ <!--blog post card2 starts-->
+     	<div class="activity-stream-wrapper">
+        	<div class="activity-card">
+    <!--blog post header starts-->
+            <div class="activity-header">
+            	<div class="content-owner-pix"><img src="img/pix.png" width="100%"></div>
+                <div class="content-owner-wrapper">
+                	<div class="content-owner-name">Paul Imisi</div>
+                <div class="status-update-timestamp" style="margin-left:0px;">2hours ago</div>
+                </div>
+            <div class="clear"></div>
+            </div>
+   <!--blog post header stops-->
+   <a href="blog_full_view.php" style="padding:0 0 7px 0; font-weight:bold; font-size:22px; color:#000;">This is my blog title: what a day!!!</a>
+      <!--remove comment tag only if blog has a photo in post
+   			<div class="photo-in-post-wrapper">
+   				<div class="photo-in-status-update">
+                <img class="img-responsive" style="vertical-align:middle" src="img/uploads/hazard.png">
+                </div>
+            </div>-->
+            <div class="text-content">
+            The project "Women For Change Initiative" was established in 2010 to sensitise, empower and mobilise women to participate actively in governance.
+			</div>
+             <!--content stats-->
+            <div class="content-stats-wrapper">
+            	<div class="content-stats">82 Likes <span style="margin:0 5px" class="glyphicon glyphicon-asterisk"></span>14 Comments</div>
+            	<div class="clear"></div>
+            </div>
+            <!--interactin bar-->
+            <div class="interaction-bar">
+            	<ul class="list-inline">
+                    <li><span><img src="img/icons/like.png" width="18" ></span> Like</li>
+                    <li><span><img src="img/icons/comment.png" width="18" ></span> Comment</li>
+                    <li><span><img src="img/icons/share.png" width="18" ></span> Share</li>
+            	</ul>
+            </div>
+          
+            </div>
+        </div>
+<!--blog post card2 ends-->
+     </div>
+<!--middle column ends-->
+<!--right column starts-->
+     <div class="col-lg-3 col-md-3 col-sm-3 right-col">
      	<div class="advert-wrapper">
         	<div class="ad-section-header">
             	<div class="sponsored-title">sponsored</div>
@@ -74,123 +180,16 @@
                 <div class="ad-link">www.buyright.co.za</div>
                 <div class="ad-description">Loafers are arguable the best quality footwear that makes your feet stand out! Shop our wi...</div>
             </div>
+            <!--ad card begins-->
+            <div class="ad-card">
+            	<div class="ad-image"><img src="img/uploads/rado.png" width="100%" ></div>
+                <div class="ad-title">Timeless pieces from $120!</div>
+                <div class="ad-link">www.buyright.co.za</div>
+                <div class="ad-description">Loafers are arguable the best quality footwear that makes your feet stand out! Shop our wi...</div>
+            </div>
             <!--ad card ends-->
-        </div>    
-     <!--blogs-->
-     </div>
-<!--left column ends-->
-<!--right column starts-->
-<div class="mp-right-col">
-<div class="mp-view-header">
-    <div style="padding:0px 0px;">
-    	<span style="font-size:22px; font-weight:700;"><span><img style="margin-right:7px;" src="img/icons/photox.png" width="30"></span>Photo Albums</span>
-        <div style="padding:10px 0 0 0;">
-        	<a href="create-album.php"><span><img style="margin-right:4px;" src="img/icons/photo.png" width="12"></span>Create Album</a> · <a href="add_photos.php"><span><img style="margin-right:4px;" src="img/icons/photo-grey.png" width="14"></span>Add Photos</a> · <a href="#"><span><img style="margin-right:4px;" src="img/icons/video.png" width="14"></span>Add Video</a>
         </div>
-    </div>
-</div>
-<!--mp-view-header ends-->
-<div style="padding:15px;">
-<div class="row">
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
-      <div class="thumbnail">
-         <img src="img/people/guy-1.jpg">
-      </div>
-      <div class="caption"> 
-            <span class="btn btn-default photo-btn" role="button">
-               Welcome Party
-            </span>
-      </div>
-      </a>
-   </div>
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
-      <div class="thumbnail">
-         <img src="img/people/guy-2.jpg">
-      </div>
-      <div class="caption">
-            <span class="btn btn-default photo-btn" role="button">
-               2014 Xmas Party
-            </span>
-      </div>
-      </a>
-   </div>
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
-      <div class="thumbnail">
-         <img src="img/people/guy-4.jpg">
-      </div>
-      <div class="caption"> 
-            <span class="btn btn-default photo-btn" role="button">
-               Cover Photos
-            </span>
-      </div>
-      </a>
-   </div>
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
-      <div class="thumbnail">
-         <img src="img/people/woman-3.jpg">
-      </div>
-      <div class="caption">
-            <span class="btn btn-default photo-btn" role="button">
-               Mobile Uploads
-            </span>
-      </div>
-      </a>
-   </div>
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
-      <div class="thumbnail">
-         <img src="img/people/guy-1.jpg">
-      </div>
-      <div class="caption"> 
-            <span class="btn btn-default photo-btn" role="button">
-               Welcome Party
-            </span>
-      </div>
-      </a>
-   </div>
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
-      <div class="thumbnail">
-         <img src="img/people/guy-4.jpg">
-      </div>
-      <div class="caption">
-            <span class="btn btn-default photo-btn" role="button">
-               2014 Xmas Party
-            </span>
-      </div>
-      </a>
-   </div>
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
-      <div class="thumbnail">
-         <img src="img/people/guy-9.jpg">
-      </div>
-      <div class="caption"> 
-            <span class="btn btn-default photo-btn" role="button">
-               Cover Photos
-            </span>
-      </div>
-      </a>
-   </div>
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
-      <div class="thumbnail">
-         <img src="img/people/woman-9.jpg">
-      </div>
-      <div class="caption">
-            <span class="btn btn-default photo-btn" role="button">
-               Mobile Uploads
-            </span>
-      </div>
-      </a>
-   </div>
-</div>
-</div>
-</div>
+     </div>
 <!--right column ends-->
 <div class="clear"></div>
 </div>

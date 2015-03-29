@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="css/jquery.fileupload.css">
 <link rel="stylesheet" href="css/jquery.fileupload-ui.css">
 <!-- CSS adjustments for browsers with JavaScript disabled -->
-<title>My Photos - Albums</title>
+<title>Create Photo - Album</title>
 <noscript><link rel="stylesheet" href="css/jquery.fileupload-noscript.css"></noscript>
 <noscript><link rel="stylesheet" href="css/jquery.fileupload-ui-noscript.css"></noscript>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -83,111 +83,16 @@
 <div class="mp-right-col">
 <div class="mp-view-header">
     <div style="padding:0px 0px;">
-    	<span style="font-size:22px; font-weight:700;"><span><img style="margin-right:7px;" src="img/icons/photox.png" width="30"></span>Photo Albums</span>
+    	<span style="font-size:22px; font-weight:700;"><span><img style="margin-right:7px;" src="img/icons/photox.png" width="30"></span>Create Album</span>
         <div style="padding:10px 0 0 0;">
-        	<a href="create-album.php"><span><img style="margin-right:4px;" src="img/icons/photo.png" width="12"></span>Create Album</a> · <a href="add_photos.php"><span><img style="margin-right:4px;" src="img/icons/photo-grey.png" width="14"></span>Add Photos</a> · <a href="#"><span><img style="margin-right:4px;" src="img/icons/video.png" width="14"></span>Add Video</a>
+        	<a href="create-album.php" style="text-decoration:underline;"><span><img style="margin-right:4px;" src="img/icons/photo.png" width="12"></span>Create Album</a> · <a href="add_photos.php"><span><img style="margin-right:4px;" src="img/icons/photo-grey.png" width="14"></span>Add Photos</a> · <a href="#"><span><img style="margin-right:4px;" src="img/icons/video.png" width="14"></span>Add Video</a>
         </div>
     </div>
 </div>
 <!--mp-view-header ends-->
 <div style="padding:15px;">
 <div class="row">
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
-      <div class="thumbnail">
-         <img src="img/people/guy-1.jpg">
-      </div>
-      <div class="caption"> 
-            <span class="btn btn-default photo-btn" role="button">
-               Welcome Party
-            </span>
-      </div>
-      </a>
-   </div>
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
-      <div class="thumbnail">
-         <img src="img/people/guy-2.jpg">
-      </div>
-      <div class="caption">
-            <span class="btn btn-default photo-btn" role="button">
-               2014 Xmas Party
-            </span>
-      </div>
-      </a>
-   </div>
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
-      <div class="thumbnail">
-         <img src="img/people/guy-4.jpg">
-      </div>
-      <div class="caption"> 
-            <span class="btn btn-default photo-btn" role="button">
-               Cover Photos
-            </span>
-      </div>
-      </a>
-   </div>
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
-      <div class="thumbnail">
-         <img src="img/people/woman-3.jpg">
-      </div>
-      <div class="caption">
-            <span class="btn btn-default photo-btn" role="button">
-               Mobile Uploads
-            </span>
-      </div>
-      </a>
-   </div>
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
-      <div class="thumbnail">
-         <img src="img/people/guy-1.jpg">
-      </div>
-      <div class="caption"> 
-            <span class="btn btn-default photo-btn" role="button">
-               Welcome Party
-            </span>
-      </div>
-      </a>
-   </div>
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
-      <div class="thumbnail">
-         <img src="img/people/guy-4.jpg">
-      </div>
-      <div class="caption">
-            <span class="btn btn-default photo-btn" role="button">
-               2014 Xmas Party
-            </span>
-      </div>
-      </a>
-   </div>
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
-      <div class="thumbnail">
-         <img src="img/people/guy-9.jpg">
-      </div>
-      <div class="caption"> 
-            <span class="btn btn-default photo-btn" role="button">
-               Cover Photos
-            </span>
-      </div>
-      </a>
-   </div>
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
-      <div class="thumbnail">
-         <img src="img/people/woman-9.jpg">
-      </div>
-      <div class="caption">
-            <span class="btn btn-default photo-btn" role="button">
-               Mobile Uploads
-            </span>
-      </div>
-      </a>
-   </div>
+  I need the fields for creating an album
 </div>
 </div>
 </div>

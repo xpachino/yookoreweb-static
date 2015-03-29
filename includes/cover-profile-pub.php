@@ -1,6 +1,6 @@
 <div class="cover profile">
      <div class="wrapper">
-          <div class="image"><div class="cover-pix"></div></div>
+          <div class="image"><div class="cover-pix"><div class="add-photo-button public-friend-status">Friends</div></div></div>
                <ul class="friends">
                    <li><a href="#"><img src="img/people/guy-6.jpg" alt="people" class="img-responsive"></a></li>
                    <li><a href="#"><img src="img/people/woman-3.jpg" alt="people" class="img-responsive"></a></li>
@@ -18,17 +18,16 @@
     </div>
     <div class="cover-info">
          <div class="avatar"> <img src="img/people/guy-4.jpg" alt="people"></div>
-         <div class="name"><a href="#">Frank O'Neil</a><span>Edit Profile</span></div>       	
+         <div class="name"><a href="#">Frank O'Neil</a><span>Following</span></div>       	
    </div>
 </div>
 <div class="profile-nav-wrapper">
    		<ul class="cover-nav">
             <li><a class="userprofile" href="userprofile.php"><img src="img/icons/profile.png" width="20" style="margin:0 4px 0 0;"></span> Timeline</a></li>
-            <li><a class="about_private" href="about_private.php"><img src="img/icons/profile.png" width="20" style="margin:0 4px 0 0;"></span> About</a></li>
             <li><a class="friends" href="friends.php"><img src="img/icons/friends.png" width="20" style="margin:0 4px 0 0;"></span> Friends</a></li>
+            <li><a class="my_photos_in" href="my_photos_in.php"><img src="img/icons/photo.png" width="20" style="margin:0 4px 0 0;"></span> Photos</a></li>
        </ul>
        <ul class="cover-nav more-nav-show">
-       		<li><a class="my_photos_in" href="my_photos_in.php"><img src="img/icons/photo.png" width="20" style="margin:0 4px 0 0;"></span> Photos</a></li>
             <li><a class="my_blog" href="my_blog.php"><img src="img/icons/blogs.png" width="20" style="margin:0 4px 0 0;"></span> Blog</a></li>
        </ul>
        <ul class="cover-nav navbar-right caret-right">

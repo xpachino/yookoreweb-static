@@ -47,32 +47,14 @@
 </div>
 <div class="container">
 <div class="row">
-<?php require("includes/cover-profile.php") ?>
+<?php require("includes/cover-profile-pub.php") ?>
 </div>
 <div class="row xtra-pad">
 <!--left column-->
-<!--announcement bar
-<div class="col-sm-cards">	
-        	<div class="col-sm-cards-header">
-            <div class="col-sm-padding">
-            	<div class="col-sm-cards-about-title"><span class="span-about"><img src="img/icons/profile.png" width="18" height="18"></span>About</div>
-            	<div class="col-sm-label">X</div>
-                <div class="clear"></div>
-             </div>
-        </div>
-        <div class="col-sm-cards-body">here</div>
- </div>
 <!--about user ends-->
 	 <div class="col-lg-3 col-md-3 col-sm-3 left-col">
 <!--about user starts-->
-<div class="col-sm-cards">	
-        	<div class="col-sm-cards-header">
-            <div class="col-sm-padding">
-            	<div class="col-sm-cards-about-title"><span class="span-about"><img src="img/icons/profile.png" width="18" height="18"></span>About</div>
-            	<div class="col-sm-label">Edit</div>
-                <div class="clear"></div>
-             </div>
-        </div>
+<div class="col-sm-cards">		
         <div class="col-sm-cards-body">
         	<div class="list-group" style="margin-bottom:5px;">
               <a href="#" class="list-group-item active" style="padding:3px 35px; background-image:url(img/icons/location.png); background-repeat:no-repeat; background-position: 3% 50%;">
@@ -108,7 +90,7 @@
             <div class="col-sm-padding">
             	<div class="col-sm-cards-about-title"><span class="span-about"><img src="img/icons/profile.png" width="18" height="18"></span>Friends</div>
             	<div class="col-sm-label"><button type="button" class="close" data-dismiss="alert" aria-label="Close">
-  <span aria-hidden="true">&times;</span>
+  <span aria-hidden="true"></span>
 </button></div>
                 <div class="clear"></div>
              </div>
@@ -118,61 +100,68 @@
             <div class="friends-wrapper">
            	<div class="row">
    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 mp-less-pad-xs">
+   <a href="userprofile_pub.php">
       <div class="thumbnail">
       <div class="caption">
                  <h4 style="padding:10px 0; font-weight:700;">Abayomi Peter</h4>
-                <a  href="" class="add-photo-button">View</a>
+                <span class="add-photo-button">View</span>
             </div>
          <img src="img/people/guy-1.jpg">
       </div>
+      </a>
    </div>
    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 mp-less-pad-xs">
-      <div class="thumbnail">
+      <a href="userprofile_pub.php"><div class="thumbnail">
       <div class="caption">
                  <h4 style="padding:10px 0; font-weight:700;">Abayomi Peter</h4>
-                <a  href="" class="add-photo-button">View</a>
+                <span class="add-photo-button">View</span>
             </div>
          <img src="img/people/guy-2.jpg">
       </div>
+      </a>
    </div>
    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 mp-less-pad-xs">
-      <div class="thumbnail">
+      <a href="userprofile_pub.php"><div class="thumbnail">
       <div class="caption">
                  <h4 style="padding:10px 0; font-weight:700;">Abayomi Peter</h4>
-                <a  href="" class="add-photo-button">View</a>
+                <span class="add-photo-button">View</span>
             </div>
          <img src="img/people/guy-4.jpg">
       </div>
+      </a>
    </div>
    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 mp-less-pad-xs">
-      <div class="thumbnail">
+      <a href="userprofile_pub.php"><div class="thumbnail">
       <div class="caption">
                  <h4 style="padding:10px 0; font-weight:700;">Abayomi Peter</h4>
-                <a  href="" class="add-photo-button">View</a>
+                <span class="add-photo-button">View</span>
             </div>
          <img src="img/people/woman-3.jpg">
       </div>
+      </a>
    </div>
    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 mp-less-pad-xs">
-      <div class="thumbnail">
+      <a href="userprofile_pub.php"><div class="thumbnail">
       <div class="caption">
                  <h4 style="padding:10px 0; font-weight:700;">Abayomi Peter</h4>
-                <a  href="" class="add-photo-button">View</a>
+                <span class="add-photo-button">View</span>
             </div>
          <img src="img/people/guy-1.jpg">
       </div>
+      </a>
    </div>
    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 mp-less-pad-xs">
-      <div class="thumbnail">
+      <a href="userprofile_pub.php"><div class="thumbnail">
       <div class="caption">
                  <h4 style="padding:10px 0; font-weight:700;">Abayomi Peter</h4>
-                <a  href="" class="add-photo-button">View</a>
+                <span class="add-photo-button">View</span>
             </div>
          <img src="img/people/guy-4.jpg">
       </div>
+      </a>
    </div>
    <div style="padding:10px 0 0 0;">
-        	<a href="#"><span><img style="margin-right:4px;" src="img/icons/friends.png" width="12"></span>View More</a>
+        	<a href="friends.php"><span><img style="margin-right:4px;" src="img/icons/friends.png" width="12"></span>View More</a>
         </div>
 </div>
             </div>
@@ -184,9 +173,6 @@
         	<div class="col-sm-cards-header">
             <div class="col-sm-padding">
             	<div class="col-sm-cards-about-title"><span class="span-about"><img src="img/icons/photo.png" width="18" height="18"></span>Photos</div>
-            	<div class="col-sm-label"><button type="button" class="close" data-dismiss="alert" aria-label="Close">
-  <span aria-hidden="true">&times;</span>
-</button></div>
                 <div class="clear"></div>
              </div>
         </div>
@@ -195,58 +181,69 @@
             <div class="friends-wrapper" style="border-bottom:0px; padding-bottom:0px;">
            	<div class="row">
    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 mp-less-pad-xs">
+   <a href="picture_full_view.php">
       <div class="thumbnail">
       <div class="caption">
                  <h4 style="padding:10px 0; font-weight:700;">Abayomi Peter</h4>
-                <a  href="" class="add-photo-button">View</a>
+                <span class="add-photo-button">View</span>
             </div>
          <img src="img/people/guy-1.jpg">
       </div>
+      </a>
    </div>
    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 mp-less-pad-xs">
+      <a href="picture_full_view.php">
       <div class="thumbnail">
       <div class="caption">
                  <h4 style="padding:10px 0; font-weight:700;">Abayomi Peter</h4>
-                <a  href="" class="add-photo-button">View</a>
+                <span class="add-photo-button">View</span>
             </div>
          <img src="img/people/guy-2.jpg">
       </div>
+      </a>
    </div>
    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 mp-less-pad-xs">
-      <div class="thumbnail">
+      <a href="picture_full_view.php"><div class="thumbnail">
       <div class="caption">
                  <h4 style="padding:10px 0; font-weight:700;">Abayomi Peter</h4>
-                <a  href="" class="add-photo-button">View</a>
+                <span class="add-photo-button">View</span>
             </div>
          <img src="img/people/guy-4.jpg">
       </div>
+      </a>
    </div>
    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 mp-less-pad-xs">
+   <a href="picture_full_view.php">
       <div class="thumbnail">
       <div class="caption">
                  <h4 style="padding:10px 0; font-weight:700;">Abayomi Peter</h4>
-                <a  href="" class="add-photo-button">View</a>
+                <span class="add-photo-button">View</span>
             </div>
          <img src="img/people/woman-3.jpg">
       </div>
+      </a>
    </div>
    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 mp-less-pad-xs">
+   <a href="picture_full_view.php">
       <div class="thumbnail">
       <div class="caption">
                  <h4 style="padding:10px 0; font-weight:700;">Abayomi Peter</h4>
-                <a  href="" class="add-photo-button">View</a>
+                <span class="add-photo-button">View</span>
             </div>
          <img src="img/people/guy-4.jpg">
       </div>
+      </a>
    </div>
    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 mp-less-pad-xs">
+   <a href="picture_full_view.php">
       <div class="thumbnail">
       	<div class="caption">
                  <h4 style="padding:10px 0; font-weight:700;">Abayomi Peter</h4>
-                <a  href="" class="add-photo-button">View</a>
+                <span class="add-photo-button">View</span>
             </div>
          <img src="img/people/woman-3.jpg">
       </div>
+      </a>
    </div>
 </div>
             </div>
@@ -258,7 +255,7 @@
 <!--middle column starts-->
      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 center-col">
 <!--status update card-->
-<?php require("includes/status-update.php") ?>
+<?php require("includes/status-update-pub.php") ?>
 <!--status update card ends-->
 <!--activity card0 starts-->
      	<div class="activity-stream-wrapper">
@@ -343,9 +340,6 @@
         	<div class="col-sm-cards-header">
             <div class="col-sm-padding">
             	<div class="col-sm-cards-about-title"><span class="span-about"><img src="img/icons/blogs.png" width="18" height="18"></span>Blogs</div>
-            	<div class="col-sm-label"><button type="button" class="close" data-dismiss="alert" aria-label="Close">
-  <span aria-hidden="true">&times;</span>
-</button></div>
                 <div class="clear"></div>
              </div>
         </div>
@@ -364,7 +358,7 @@
                                 </div>
                             <div class="clear"></div>
                             </div>
-                            <div class="comment-socials"><span><img src="img/icons/delete.png" width="12" ></span></div>
+                            <div class="comment-socials"><span><img src="img/icons/like.png" width="12" ></span></div>
                         <div class="clear"></div>
                    </div>
                    </a>
@@ -380,7 +374,7 @@
                                 </div>
                             <div class="clear"></div>
                             </div>
-                            <div class="comment-socials"><span><img src="img/icons/delete.png" width="12" ></span></div>
+                            <div class="comment-socials"><span><img src="img/icons/like.png" width="12" ></span></div>
                         <div class="clear"></div>
                    </div>
                    </a>
@@ -396,7 +390,7 @@
                                 </div>
                             <div class="clear"></div>
                             </div>
-                            <div class="comment-socials"><span><img src="img/icons/delete.png" width="12" ></span></div>
+                            <div class="comment-socials"><span><img src="img/icons/like.png" width="12" ></span></div>
                         <div class="clear"></div>
                    </div>
                    </a>

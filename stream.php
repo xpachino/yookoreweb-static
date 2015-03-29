@@ -81,53 +81,7 @@ $(function () {
 <div class="row xtra-pad">
 <!--left column-->
 	 <div class="col-lg-3 col-md-3 col-sm-3 left-col">
-     <!--profile section-->
-     	<div class="profile-info-wrapper">
-        	<div class="profile-pix-card">
-            	<div class="profile-pix-img"><img src="img/pix.jpg" width="100%"></div>
-            </div>
-                <div class="profile-name">Paul Imisi</div>
-                <div class="edit-profile">Edit Profile</div>
-                <div class="profile-stats-wrapper">
-                	<div class="profile-stats-info">
-                    	<div class="ps-friends">4k</div><span>Friends</span>
-                    </div>
-                    <div class="profile-stats-info">
-                    	<div class="ps-pages">15</div><span>Pages</span>
-                    </div>
-                    <div class="profile-stats-info">
-                    	<div class="ps-groups">9</div><span>Groups</span>
-                    </div>
-                </div>
-        </div>
-     <!--side menu-->
-     	<div class="side-menu-wrapper">
-        <div class="list-group">
-            <a href="#" class="list-group-item">
-                <span class="list-group-icons"><img src="img/icons/profile.png" width="18"></span> Profile</a>
-            <a href="#" class="list-group-item">
-                <span class="list-group-icons"><img src="img/icons/photo.png" width="18"></span> Photos <span class="badge">15</span>
-            </a>
-            <a href="#" class="list-group-item">
-                <span class="list-group-icons"><img src="img/icons/blogs.png" width="18"></span> Blogs <span class="badge">5</span>
-            </a>
-            <a href="#" class="list-group-item">
-                <span class="list-group-icons"><img src="img/icons/video.png" width="18"></span> Videos <span class="badge">8</span>
-            </a>
-            <a href="#" class="list-group-item">
-                <span class="list-group-icons"><img src="img/icons/friends.png" width="18"></span> Friends <span class="badge">48</span>
-            </a>
-            <a href="#" class="list-group-item">
-                <span class="list-group-icons"><img src="img/icons/pgs.png" width="18"></span> Pages</a>
-            <a href="#" class="list-group-item">
-                <span class="list-group-icons"><img src="img/icons/grp.png" width="18"></span> Groups
-            </a>
-            <a href="#" class="list-group-item">
-                <span class="list-group-icons"><img src="img/icons/msg.png" width="18"></span> Messages <span class="badge">8</span>
-            </a>
-            <a href="#" class="list-group-item"><span class="list-group-icons"><img src="img/icons/settings.png" width="18"></span> Settings</a>
-        </div>
-        </div>
+     <?php require("includes/stream-side-nav.html") ?>
      </div>
 <!--left column ends-->
 <!--middle column starts-->

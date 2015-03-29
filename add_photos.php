@@ -15,10 +15,11 @@
 <link rel="stylesheet" href="css/jquery.fileupload.css">
 <link rel="stylesheet" href="css/jquery.fileupload-ui.css">
 <!-- CSS adjustments for browsers with JavaScript disabled -->
-<title>My Photos - Albums</title>
+<title>Add Photos</title>
 <noscript><link rel="stylesheet" href="css/jquery.fileupload-noscript.css"></noscript>
 <noscript><link rel="stylesheet" href="css/jquery.fileupload-ui-noscript.css"></noscript>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <!--new scripts-->
 <link rel="stylesheet" href="https://rawgit.com/dbtek/angular-aside/master/dist/css/angular-aside.min.css" />
 <script src="https://code.angularjs.org/1.2.21/angular.js"></script>
@@ -54,9 +55,9 @@
    	   <!--side menu-->
      	<div class="side-menu-wrapper" style="background:none !important;">
         <div class="list-group">
-            <a href="my_photos.php" class="list-group-item active"><span class="list-group-icons"><img src="img/icons/blogs.png" width="18"></span>Albums</a>
+            <a href="my_photos.php" class="list-group-item"><span class="list-group-icons"><img src="img/icons/blogs.png" width="18"></span>Albums</a>
             <a href="my_photos_pu.php" class="list-group-item"><span class="list-group-icons"><img src="img/icons/profile.png" width="18"></span> Photos of You</a>
-            <a href="my_photos_in.php" class="list-group-item"><span class="list-group-icons"><img src="img/icons/photo.png" width="18"></span>Your Photos</a>
+            <a href="my_photos_in.php" class="list-group-item active"><span class="list-group-icons"><img src="img/icons/photo.png" width="18"></span>Your Photos</a>
         </div>
         </div> 
         <div class="col-sm-cards">
@@ -83,111 +84,54 @@
 <div class="mp-right-col">
 <div class="mp-view-header">
     <div style="padding:0px 0px;">
-    	<span style="font-size:22px; font-weight:700;"><span><img style="margin-right:7px;" src="img/icons/photox.png" width="30"></span>Photo Albums</span>
+    	<span style="font-size:22px; font-weight:700;"><span><img style="margin-right:7px;" src="img/icons/photox.png" width="30"></span>My Photos</span>
         <div style="padding:10px 0 0 0;">
-        	<a href="create-album.php"><span><img style="margin-right:4px;" src="img/icons/photo.png" width="12"></span>Create Album</a> · <a href="add_photos.php"><span><img style="margin-right:4px;" src="img/icons/photo-grey.png" width="14"></span>Add Photos</a> · <a href="#"><span><img style="margin-right:4px;" src="img/icons/video.png" width="14"></span>Add Video</a>
+        	<a href="create-album.php"><span><img style="margin-right:4px;" src="img/icons/photo.png" width="12"></span>Create Album</a> · <a href="add_photos.php" style="text-decoration:underline;"><span><img style="margin-right:4px;" src="img/icons/photo-grey.png" width="14"></span>Add Photos</a> · <a href="#"><span><img style="margin-right:4px;" src="img/icons/video.png" width="14"></span>Add Video</a>
         </div>
     </div>
 </div>
 <!--mp-view-header ends-->
 <div style="padding:15px;">
 <div class="row">
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
-      <div class="thumbnail">
-         <img src="img/people/guy-1.jpg">
-      </div>
-      <div class="caption"> 
-            <span class="btn btn-default photo-btn" role="button">
-               Welcome Party
-            </span>
-      </div>
-      </a>
-   </div>
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
-      <div class="thumbnail">
-         <img src="img/people/guy-2.jpg">
-      </div>
-      <div class="caption">
-            <span class="btn btn-default photo-btn" role="button">
-               2014 Xmas Party
-            </span>
-      </div>
-      </a>
-   </div>
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
-      <div class="thumbnail">
-         <img src="img/people/guy-4.jpg">
-      </div>
-      <div class="caption"> 
-            <span class="btn btn-default photo-btn" role="button">
-               Cover Photos
-            </span>
-      </div>
-      </a>
-   </div>
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
-      <div class="thumbnail">
-         <img src="img/people/woman-3.jpg">
-      </div>
-      <div class="caption">
-            <span class="btn btn-default photo-btn" role="button">
-               Mobile Uploads
-            </span>
-      </div>
-      </a>
-   </div>
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
-      <div class="thumbnail">
-         <img src="img/people/guy-1.jpg">
-      </div>
-      <div class="caption"> 
-            <span class="btn btn-default photo-btn" role="button">
-               Welcome Party
-            </span>
-      </div>
-      </a>
-   </div>
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
-      <div class="thumbnail">
-         <img src="img/people/guy-4.jpg">
-      </div>
-      <div class="caption">
-            <span class="btn btn-default photo-btn" role="button">
-               2014 Xmas Party
-            </span>
-      </div>
-      </a>
-   </div>
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
-      <div class="thumbnail">
-         <img src="img/people/guy-9.jpg">
-      </div>
-      <div class="caption"> 
-            <span class="btn btn-default photo-btn" role="button">
-               Cover Photos
-            </span>
-      </div>
-      </a>
-   </div>
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
-      <div class="thumbnail">
-         <img src="img/people/woman-9.jpg">
-      </div>
-      <div class="caption">
-            <span class="btn btn-default photo-btn" role="button">
-               Mobile Uploads
-            </span>
-      </div>
-      </a>
-   </div>
+ 
+     	<div class="status-update-wrapper">
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="photo">
+          <div class="status-update-form-wrapper">
+            	<textarea rows="1" class="update-status" placeholder="Write something..."></textarea>
+          </div>
+    <!-- The file upload form used as target for the file upload widget -->
+    <form id="fileupload" action="//jquery-file-upload.appspot.com/" method="POST" enctype="multipart/form-data">
+        <!-- Redirect browsers with JavaScript disabled to the origin page -->
+        <noscript><input type="hidden" name="redirect" value="https://blueimp.github.io/jQuery-File-Upload/"></noscript>
+        <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
+        <div class="drag-drop-photo">Drag and drop files to upload<br>OR<br>
+    <!-- The fileinput-button span is used to style the file input field as button -->
+    <span class="btn add-photo-button fileinput-button">
+        <span class="add-photo-button-icon">Add Photos...</span>
+        <!-- The file input field used as target for the file upload widget -->
+        <input id="fileupload" type="file" name="files[]" multiple>
+    </span>
+    </div>
+        <!-- The table listing the files available for upload/download -->
+        <div role="presentation" style="padding:0 5px 0px; text-align:center;">
+        <div class="files">
+        </div>
+        <div class="clear"></div>
+        <div class="row fileupload-buttonbar">
+        <div class="post-photo-bottom">
+        	<button type="submit" class="post-update-button start">Upload</button>
+            <div class="clear"></div> 
+        </div>
+        </div>
+        </div>
+    </form>
+          </div>
+           
+
+        </div> 
+        </div>
+
 </div>
 </div>
 </div>

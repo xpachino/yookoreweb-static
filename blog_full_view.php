@@ -23,6 +23,11 @@
 <div class="row xtra-pad">
 <!--left column starts---->
     <div class="photo-left-col">
+    <div style="padding:10px 15px; background:#fff; border-radius:4px; border:1px solid #ddd; margin-bottom:10px;">
+    <span style="font-size:18px; font-weight:700;">Blog Post</span><br>
+    <a href="my_blog.php">Back to Blogs</a> · <a href="create-blog-post-full.php">New Blog Post</a>
+    </div>
+
     	<!--activity card0 starts-->
      	<div class="activity-stream-wrapper">
         	<div class="activity-card" style="padding:15px 15px 0 15px;">

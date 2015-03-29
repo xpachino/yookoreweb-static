@@ -7,6 +7,7 @@
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="css/onboard.css" rel="stylesheet" type="text/css">
 <link href="css/profile2.css" rel="stylesheet" type="text/css">
+<link href="css/my_photos.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
 <!-- CSS to style the file input field as button and adjust the Bootstrap progress bars -->
 <link rel="stylesheet" href="css/jquery.fileupload.css">
@@ -34,52 +35,9 @@
     };
   });
     </script>
-   <script>
-$(function () {
-  $('[data-toggle="popover"]').popover()
-});
-</script>
-<!--new scritp ends-->
-<script src="js/salvattore.js"></script>
-<style>
-/* Hide Angular JS elements before initializing */
-.ng-cloak {
-    display: none;
-}
-</style>
-<script>
-(function($)
-{
-    $(document).ready(function()
-    {
-        $.ajaxSetup(
-        {
-            cache: false,
-            beforeSend: function() {
-                $('.photo-in-status-update-auto').hide();
-                $('#loading').show();
-            },
-            complete: function() {
-                $('#loading').hide();
-                $('.photo-in-status-update-auto').show();
-            },
-            success: function() {
-                $('#loading').hide();
-                $('.photo-in-status-update-auto').show();
-            }
-        });
-        var $container = $(".photo-in-status-update-auto");
-        $container.load("latest-pix.php");
-        var refreshId = setInterval(function()
-        {
-            $container.load('latest-pix.php');
-        }, 30000);
-    });
-})(jQuery);
-</script>
 </head>
 
-<body ng-controller="MainCtrl">
+<body class="about_private" ng-controller="MainCtrl">
 <?php require("includes/head.php") ?>
 <!--container ends-->
 <div class="container">

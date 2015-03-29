@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
-
+.public-friend-status{position:absolute; right:265px; bottom:15px;}
 .cover.profile .wrapper .friends li {
 float: left;
 margin: 0;
@@ -120,6 +120,7 @@ color: #666;
 display: block;
 font-weight:700;
 text-decoration:none;
+border-bottom:3px solid transparent;
 font-size:14px;
 }
 .profile-nav-wrapper .cover-nav>li.active>a {
@@ -253,6 +254,7 @@ margin-left: -5px;
 .more-nav-show{display:inherit; border-left:1px solid #e2e9e6; border-right:0px;}
 
 @media (min-width: 220px) and (max-width : 479px) {
+.public-friend-status{position:absolute; right:15px; bottom:15px;}
 .xtra-pad{padding:0 5px;}
 .more-nav-show{display:none;}
 .caret-right{float:right !important; display:inherit;}
@@ -278,8 +280,8 @@ display:none;}
 	margin:0 5px;
 	color:#fff;
 }
-.profile-nav-wrapper{padding:0px; background:#fff; padding-left:0px; border-bottom:1px solid #ddd; border-radius:0 0 4px 4px;}
-.profile-nav-wrapper .cover-nav>li>a {
+
+/*.profile-nav-wrapper .cover-nav>li>a {
 padding: 15px 11px;
 color: #666;
 display: block;
@@ -291,7 +293,33 @@ background: 0 0;
 color: #000;
 border-bottom:3px solid #f60;
 padding:15px 11px;
+}*/
+.profile-nav-wrapper .cover-nav>li>a {
+padding: 15px 11px;
+color: #666;
+display: block;
+font-weight:700;
+text-decoration:none;
+border-bottom:3px solid transparent;
+font-size:14px;
 }
+.profile-nav-wrapper .cover-nav>li.active>a {
+background: 0 0;
+color: #000;
+border-bottom:3px solid #f60;
+padding:15px 11px;
+font-weight:700;
+}
+.stay-active {
+border-bottom:3px solid #f60;
+}
+.profile-nav-wrapper .cover-nav>li>a:hover{
+background: 0 0;
+color: #333;
+border-bottom:3px solid #f60;
+padding:15px 11px;
+}
+
 .cover.profile .wrapper .image {
     background: none repeat scroll 0 0 #000;
     overflow-y: hidden;
@@ -347,6 +375,7 @@ margin-right:5px;
 }
 
 @media (min-width: 480px) and (max-width: 859px) {
+.public-friend-status{position:absolute; right:135px; bottom:15px;}
 .xtra-pad{padding:0px;}
 .more-nav-show{display:none;}
 .caret-right{float:right !important; display:block;}

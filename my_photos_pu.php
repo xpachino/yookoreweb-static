@@ -7,7 +7,7 @@
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="css/onboard.css" rel="stylesheet" type="text/css">
 <link href="css/profile2.css" rel="stylesheet" type="text/css">
-
+<link href="css/userprofile.css" rel="stylesheet" type="text/css">
 <link href="css/my_photos.css" rel="stylesheet" type="text/css">
 
 <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="css/jquery.fileupload.css">
 <link rel="stylesheet" href="css/jquery.fileupload-ui.css">
 <!-- CSS adjustments for browsers with JavaScript disabled -->
-<title>My Photos - Albums</title>
+<title>My Photos View</title>
 <noscript><link rel="stylesheet" href="css/jquery.fileupload-noscript.css"></noscript>
 <noscript><link rel="stylesheet" href="css/jquery.fileupload-ui-noscript.css"></noscript>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -38,6 +38,7 @@
   });
     </script>
 <!--new scritp ends-->
+<script src="js/caption.js" type="text/javascript"></script>
 </head>
 
 <body class="my_photos_in" ng-controller="MainCtrl">
@@ -54,8 +55,8 @@
    	   <!--side menu-->
      	<div class="side-menu-wrapper" style="background:none !important;">
         <div class="list-group">
-            <a href="my_photos.php" class="list-group-item active"><span class="list-group-icons"><img src="img/icons/blogs.png" width="18"></span>Albums</a>
-            <a href="my_photos_pu.php" class="list-group-item"><span class="list-group-icons"><img src="img/icons/profile.png" width="18"></span> Photos of You</a>
+            <a href="my_photos.php" class="list-group-item"><span class="list-group-icons"><img src="img/icons/blogs.png" width="18"></span>Albums</a>
+            <a href="my_photos_pu.php" class="list-group-item active"><span class="list-group-icons"><img src="img/icons/profile.png" width="18"></span> Photos of You</a>
             <a href="my_photos_in.php" class="list-group-item"><span class="list-group-icons"><img src="img/icons/photo.png" width="18"></span>Your Photos</a>
         </div>
         </div> 
@@ -83,7 +84,7 @@
 <div class="mp-right-col">
 <div class="mp-view-header">
     <div style="padding:0px 0px;">
-    	<span style="font-size:22px; font-weight:700;"><span><img style="margin-right:7px;" src="img/icons/photox.png" width="30"></span>Photo Albums</span>
+    	<span style="font-size:22px; font-weight:700;"><span><img style="margin-right:7px;" src="img/icons/photox.png" width="30"></span>Photos of You</span>
         <div style="padding:10px 0 0 0;">
         	<a href="create-album.php"><span><img style="margin-right:4px;" src="img/icons/photo.png" width="12"></span>Create Album</a> · <a href="add_photos.php"><span><img style="margin-right:4px;" src="img/icons/photo-grey.png" width="14"></span>Add Photos</a> · <a href="#"><span><img style="margin-right:4px;" src="img/icons/video.png" width="14"></span>Add Video</a>
         </div>
@@ -92,99 +93,140 @@
 <!--mp-view-header ends-->
 <div style="padding:15px;">
 <div class="row">
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
+   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad-xs">
+   <a href="picture_full_view.php">
       <div class="thumbnail">
+      	<div class="caption">
+                 <h4 style="padding:10px 0; font-weight:700;"></h4>
+                 <!--interactin bar-->
+                 <div class="pix-delete"></div>
+            <div class="thumbnail-socials">
+                    <span style="display:inline-block; margin-right:10px;">Like</span>
+                    <span style="display:inline-block; margin-right:10px;"> Comment</span>
+                    <span style="display:inline-block; margin-right:10px;"> Share</span>
+            </div>
+            </div>
          <img src="img/people/guy-1.jpg">
-      </div>
-      <div class="caption"> 
-            <span class="btn btn-default photo-btn" role="button">
-               Welcome Party
-            </span>
       </div>
       </a>
    </div>
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
+   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad-xs">
+   <a href="picture_full_view.php">
       <div class="thumbnail">
+      <div class="caption">
+                 <h4 style="padding:10px 0; font-weight:700;"></h4>
+                 <!--interactin bar-->
+                 <div class="pix-delete"></div>
+                  <div class="thumbnail-socials">
+                    <span style="display:inline-block; margin-right:10px;">Like</span>
+                    <span style="display:inline-block; margin-right:10px;"> Comment</span>
+                    <span style="display:inline-block; margin-right:10px;"> Share</span>
+            </div>
+            </div>
          <img src="img/people/guy-2.jpg">
       </div>
+      </a>
+   </div>
+   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad-xs">
+   <a href="picture_full_view.php">
+      <div class="thumbnail">
       <div class="caption">
-            <span class="btn btn-default photo-btn" role="button">
-               2014 Xmas Party
-            </span>
-      </div>
-      </a>
-   </div>
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
-      <div class="thumbnail">
+                 <h4 style="padding:10px 0; font-weight:700;"></h4>
+                 <!--interactin bar-->
+                 <div class="pix-delete"></div>
+                  <div class="thumbnail-socials">
+                    <span style="display:inline-block; margin-right:10px;">Like</span>
+                    <span style="display:inline-block; margin-right:10px;"> Comment</span>
+                    <span style="display:inline-block; margin-right:10px;"> Share</span>
+            </div>
+            </div>
          <img src="img/people/guy-4.jpg">
-      </div>
-      <div class="caption"> 
-            <span class="btn btn-default photo-btn" role="button">
-               Cover Photos
-            </span>
-      </div>
+      </div> 
       </a>
    </div>
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
+   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad-xs">
+   <a href="picture_full_view.php">
       <div class="thumbnail">
+      <div class="caption">
+      	<h4 style="padding:10px 0; font-weight:700;"></h4>
+        <!--interactin bar-->
+                 <div class="pix-delete"></div>
+       <div class="thumbnail-socials">
+                    <span style="display:inline-block; margin-right:10px;">Like</span>
+                    <span style="display:inline-block; margin-right:10px;"> Comment</span>
+                    <span style="display:inline-block; margin-right:10px;"> Share</span>
+            </div>
+      </div>
          <img src="img/people/woman-3.jpg">
       </div>
-      <div class="caption">
-            <span class="btn btn-default photo-btn" role="button">
-               Mobile Uploads
-            </span>
-      </div>
       </a>
    </div>
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
+   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad-xs">
+   <a href="picture_full_view.php">
       <div class="thumbnail">
+      <div class="caption">
+      <h4 style="padding:10px 0; font-weight:700;"></h4>
+      <!--interactin bar-->
+                 <div class="pix-delete"></div>
+      			 <div class="thumbnail-socials">
+                    <span style="display:inline-block; margin-right:10px;">Like</span>
+                    <span style="display:inline-block; margin-right:10px;"> Comment</span>
+                    <span style="display:inline-block; margin-right:10px;"> Share</span>
+            </div>
+                 
+            </div>
          <img src="img/people/guy-1.jpg">
       </div>
-      <div class="caption"> 
-            <span class="btn btn-default photo-btn" role="button">
-               Welcome Party
-            </span>
-      </div>
       </a>
    </div>
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
+   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad-xs">
+   <a href="picture_full_view.php">
       <div class="thumbnail">
+      <div class="caption">
+      <h4 style="padding:10px 0; font-weight:700;"></h4>
+      <!--interactin bar-->
+                 <div class="pix-delete"></div>
+      			 <div class="thumbnail-socials">
+                    <span style="display:inline-block; margin-right:10px;">Like</span>
+                    <span style="display:inline-block; margin-right:10px;"> Comment</span>
+                    <span style="display:inline-block; margin-right:10px;"> Share</span>
+            </div>
+            </div>
          <img src="img/people/guy-4.jpg">
       </div>
-      <div class="caption">
-            <span class="btn btn-default photo-btn" role="button">
-               2014 Xmas Party
-            </span>
-      </div>
       </a>
    </div>
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
+   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad-xs">
+   <a href="picture_full_view.php">
       <div class="thumbnail">
+      <div class="caption">
+      			<h4 style="padding:10px 0; font-weight:700;"></h4>
+                <!--interactin bar-->
+                 <div class="pix-delete"></div>
+      			 <div class="thumbnail-socials">
+                    <span style="display:inline-block; margin-right:5px;">Like</span>
+                    <span style="display:inline-block; margin-right:5px;"> Comment</span>
+                    <span style="display:inline-block; margin-right:0px;"> Share</span>
+            </div>
+            </div>
          <img src="img/people/guy-9.jpg">
-      </div>
-      <div class="caption"> 
-            <span class="btn btn-default photo-btn" role="button">
-               Cover Photos
-            </span>
-      </div>
+      </div> 
       </a>
    </div>
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
+   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad-xs">
+      <a href="picture_full_view.php">
       <div class="thumbnail">
+      <div class="caption" style="text-align:center;">
+      		<h4 style="padding:10px 0; font-weight:700;"></h4>
+            <!--interactin bar-->
+                 <div class="pix-delete"></div>
+      		 <div class="thumbnail-socials">
+                    <div style="display:inline-block; margin-right:5px;">Like</div>
+                    <div style="display:inline-block; margin-right:5px;"> Comment</div>
+                    <div style="display:inline-block; margin-right:0px;"> Share</div>
+            </div>
+            </div>
          <img src="img/people/woman-9.jpg">
-      </div>
-      <div class="caption">
-            <span class="btn btn-default photo-btn" role="button">
-               Mobile Uploads
-            </span>
       </div>
       </a>
    </div>

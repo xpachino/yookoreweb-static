@@ -7,7 +7,7 @@
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="css/onboard.css" rel="stylesheet" type="text/css">
 <link href="css/profile2.css" rel="stylesheet" type="text/css">
-
+<link href="css/userprofile.css" rel="stylesheet" type="text/css">
 <link href="css/my_photos.css" rel="stylesheet" type="text/css">
 
 <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="css/jquery.fileupload.css">
 <link rel="stylesheet" href="css/jquery.fileupload-ui.css">
 <!-- CSS adjustments for browsers with JavaScript disabled -->
-<title>My Photos - Albums</title>
+<title>My Photos View</title>
 <noscript><link rel="stylesheet" href="css/jquery.fileupload-noscript.css"></noscript>
 <noscript><link rel="stylesheet" href="css/jquery.fileupload-ui-noscript.css"></noscript>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -38,9 +38,10 @@
   });
     </script>
 <!--new scritp ends-->
+<script src="js/caption.js" type="text/javascript"></script>
 </head>
 
-<body class="my_photos_in" ng-controller="MainCtrl">
+<body class="friends" ng-controller="MainCtrl">
 <?php require("includes/head.php") ?>
 <!--container ends-->
 <div class="container">
@@ -54,13 +55,12 @@
    	   <!--side menu-->
      	<div class="side-menu-wrapper" style="background:none !important;">
         <div class="list-group">
-            <a href="my_photos.php" class="list-group-item active"><span class="list-group-icons"><img src="img/icons/blogs.png" width="18"></span>Albums</a>
-            <a href="my_photos_pu.php" class="list-group-item"><span class="list-group-icons"><img src="img/icons/profile.png" width="18"></span> Photos of You</a>
-            <a href="my_photos_in.php" class="list-group-item"><span class="list-group-icons"><img src="img/icons/photo.png" width="18"></span>Your Photos</a>
+            <a href="all_friends.php" class="list-group-item active"><span class="list-group-icons"><img src="img/icons/blogs.png" width="18"></span>All Friends</a>
+            <a href="#" class="list-group-item disabled"><span class="list-group-icons"><img src="img/icons/profile.png" width="18"></span>Recentlt Added</a>
+            <a href="#" class="list-group-item disabled"><span class="list-group-icons"><img src="img/icons/photo.png" width="18"></span>Friends of Friends</a>
+            <a href="#" class="list-group-item disabled"><span class="list-group-icons"><img src="img/icons/photo.png" width="18"></span>Suggested Friends</a>
         </div>
         </div> 
-        <div class="col-sm-cards">
-        </div>
      	<div class="advert-wrapper">
         	<div class="ad-section-header">
             	<div class="sponsored-title">sponsored</div>
@@ -83,108 +83,125 @@
 <div class="mp-right-col">
 <div class="mp-view-header">
     <div style="padding:0px 0px;">
-    	<span style="font-size:22px; font-weight:700;"><span><img style="margin-right:7px;" src="img/icons/photox.png" width="30"></span>Photo Albums</span>
+    	<span style="font-size:22px; font-weight:700;"><span><img style="margin-right:7px;" src="img/icons/friends.png" width="30"></span>Friends</span>
         <div style="padding:10px 0 0 0;">
-        	<a href="create-album.php"><span><img style="margin-right:4px;" src="img/icons/photo.png" width="12"></span>Create Album</a> · <a href="add_photos.php"><span><img style="margin-right:4px;" src="img/icons/photo-grey.png" width="14"></span>Add Photos</a> · <a href="#"><span><img style="margin-right:4px;" src="img/icons/video.png" width="14"></span>Add Video</a>
+        	<a href="#"><span><img style="margin-right:4px;" src="img/icons/location.png" width="14"></span>Find Friends</a> · <a href="#"><span><img style="margin-right:4px;" src="img/icons/notif.png" width="14"></span>Friend Request</a>
         </div>
     </div>
 </div>
 <!--mp-view-header ends-->
 <div style="padding:15px;">
 <div class="row">
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
+   <div class="col-xs-4 col-sm-3 col-md-2 mp-less-pad-xs">
+   <a href="userprofile_pub.php">
       <div class="thumbnail">
+      	<div class="caption">
+                 <h4 style="padding:5px 0; font-weight:700;">Abayomi Mandla</h4>
+                 <!--interactin bar-->
+            <div class="thumbnail-socials">
+                    <span style="display:block; margin-right:10px;"> Unfriend</span>
+            </div>
+            </div>
          <img src="img/people/guy-1.jpg">
-      </div>
-      <div class="caption"> 
-            <span class="btn btn-default photo-btn" role="button">
-               Welcome Party
-            </span>
       </div>
       </a>
    </div>
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
+   <div class="col-xs-4 col-sm-3 col-md-2 mp-less-pad-xs">
+   <a href="userprofile_pub.php">
       <div class="thumbnail">
+      <div class="caption">
+                 <h4 style="padding:5px 0; font-weight:700;">Akpoduado Benjamin Makwena</h4>
+                 <!--interactin bar-->
+                  <div class="thumbnail-socials">
+                    <span style="display:inline-block; margin-right:10px;"> Unfriend</span>
+            </div>
+            </div>
          <img src="img/people/guy-2.jpg">
       </div>
+      </a>
+   </div>
+   <div class="col-xs-4 col-sm-3 col-md-2 mp-less-pad-xs">
+   <a href="userprofile_pub.php">
+      <div class="thumbnail">
       <div class="caption">
-            <span class="btn btn-default photo-btn" role="button">
-               2014 Xmas Party
-            </span>
-      </div>
-      </a>
-   </div>
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
-      <div class="thumbnail">
+                 <h4 style="padding:5px 0; font-weight:700;">Ben Alpha</h4>
+                 <!--interactin bar-->
+                  <div class="thumbnail-socials">
+                    <span style="display:inline-block; margin-right:10px;"> Unfriend</span>
+            </div>
+            </div>
          <img src="img/people/guy-4.jpg">
-      </div>
-      <div class="caption"> 
-            <span class="btn btn-default photo-btn" role="button">
-               Cover Photos
-            </span>
-      </div>
+      </div> 
       </a>
    </div>
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
+   <div class="col-xs-4 col-sm-3 col-md-2 mp-less-pad-xs">
+   <a href="userprofile_pub.php">
       <div class="thumbnail">
+      <div class="caption">
+      	<h4 style="padding:5px 0; font-weight:700;">Jimmy Pascal</h4>
+        <!--interactin bar-->
+       <div class="thumbnail-socials">
+                    <span style="display:inline-block; margin-right:10px;"> Unfriend</span>
+            </div>
+      </div>
          <img src="img/people/woman-3.jpg">
       </div>
-      <div class="caption">
-            <span class="btn btn-default photo-btn" role="button">
-               Mobile Uploads
-            </span>
-      </div>
       </a>
    </div>
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
+   <div class="col-xs-4 col-sm-3 col-md-2 mp-less-pad-xs">
+   <a href="userprofile_pub.php">
       <div class="thumbnail">
+      <div class="caption">
+      <h4 style="padding:5px 0; font-weight:700;">Name</h4>
+      <!--interactin bar-->
+      			 <div class="thumbnail-socials">
+                    <span style="display:inline-block; margin-right:10px;"> Unfriend</span>
+            </div>
+                 
+            </div>
          <img src="img/people/guy-1.jpg">
       </div>
-      <div class="caption"> 
-            <span class="btn btn-default photo-btn" role="button">
-               Welcome Party
-            </span>
-      </div>
       </a>
    </div>
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
+   <div class="col-xs-4 col-sm-3 col-md-2 mp-less-pad-xs">
+   <a href="userprofile_pub.php">
       <div class="thumbnail">
+      <div class="caption">
+      <h4 style="padding:5px 0; font-weight:700;">Name</h4>
+      <!--interactin bar-->
+      			 <div class="thumbnail-socials">
+                    <span style="display:inline-block; margin-right:10px;"> Unfriend</span>
+            </div>
+            </div>
          <img src="img/people/guy-4.jpg">
       </div>
-      <div class="caption">
-            <span class="btn btn-default photo-btn" role="button">
-               2014 Xmas Party
-            </span>
-      </div>
       </a>
    </div>
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
+   <div class="col-xs-4 col-sm-3 col-md-2 mp-less-pad-xs">
+   <a href="userprofile_pub.php">
       <div class="thumbnail">
+      <div class="caption">
+      			<h4 style="padding:5px 0; font-weight:700;">Name</h4>
+                <!--interactin bar-->
+      			 <div class="thumbnail-socials">
+                    <span style="display:inline-block; margin-right:10px;"> Unfriend</span>
+            </div>
+            </div>
          <img src="img/people/guy-9.jpg">
-      </div>
-      <div class="caption"> 
-            <span class="btn btn-default photo-btn" role="button">
-               Cover Photos
-            </span>
-      </div>
+      </div> 
       </a>
    </div>
-   <div class="col-xs-4 col-sm-4 col-md-3 mp-less-pad">
-   <a href="album_view.php">
+   <div class="col-xs-4 col-sm-3 col-md-2 mp-less-pad-xs">
+      <a href="userprofile_pub.php">
       <div class="thumbnail">
+      <div class="caption" style="text-align:center;">
+      		<h4 style="padding:5px 0; font-weight:700;">Name</h4>
+            <!--interactin bar-->
+      		 <div class="thumbnail-socials">
+                    <span style="display:inline-block; margin-right:10px;"> Unfriend</span>
+            </div>
+            </div>
          <img src="img/people/woman-9.jpg">
-      </div>
-      <div class="caption">
-            <span class="btn btn-default photo-btn" role="button">
-               Mobile Uploads
-            </span>
       </div>
       </a>
    </div>
