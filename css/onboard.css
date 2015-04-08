@@ -84,6 +84,7 @@ display:none;
 }
 .left-margin-border{margin-left:0px; padding-left:0px; border-left:0px solid #ddd;}
 .onboard-wrapper{margin:0 auto; width:100%; max-width:890px; background:#fff; border-radius:4px; padding:30px; margin-bottom:30px;}
+.offset-padding{padding:0px; max-width:250px;}
 }
 @media (min-width: 480px) and (max-width: 859px) {
 .col-pad-control{float:right; padding-left:0px;}
@@ -100,6 +101,7 @@ display:none;
 .col-login-left {
 display:none;
 }
+.offset-padding{padding:0px 15px 0 0; max-width:250px;}
 }
 @media (min-width: 860px) and (max-width: 1139px) {
 .margin-overide{margin-top:90px;}
