@@ -68,7 +68,8 @@ margin: 15px 0;
 left: 15px;
 z-index: 4;
 }
-.avatar{border-radius:100px; overflow:hidden; border:2px solid #fff;}
+.avatar{border-radius:100px; overflow:hidden; border:2px solid #fff; width:110px; height:110px;}
+.avatar img{width:100%;}
 .cover.profile .cover-info {
 position: relative;
 border-radius:0 0 4px 4px;
@@ -197,6 +198,17 @@ border-color: #428bca;
 .navbar-default .navbar-nav>.dropdown>a .caret {
 border-top-color: #fff;
 border-bottom-color: #fff;
+}
+.caret-333 {
+display: inline-block;
+width: 0;
+height: 0;
+margin-left: 5px;
+border-top: 5px solid #666;
+border-right: 5px solid transparent;
+border-bottom: 0 dotted;
+border-left: 5px solid transparent;
+margin-bottom:2px;
 }
 .caret {
 display: inline-block;
@@ -337,7 +349,8 @@ margin-bottom: 15px;
 left: 15px;
 z-index: 4;
 }
-.avatar img{height:80px; width:80px;}
+.avatar{border-radius:100px; overflow:hidden; border:2px solid #fff; width:80px; height:80px;}
+.avatar img{width:100%;}
 .cover.profile .cover-info .name {
     bottom: 0;
     display: block;
@@ -347,7 +360,7 @@ z-index: 4;
     z-index: 3;
 }
 .name a{color:#fff; font-size:18px; font-weight:bold; text-decoration:none;}
-.name span{font-size:14px; color:#fff; display:block; margin-top:-8px;}
+.profile-edit{font-size:14px; color:#fff; display:block; margin-top:-8px;}
 .cover.profile .cover-info .cover-nav {
     bottom: 0;
     float: left;
@@ -462,7 +475,8 @@ height: auto;}
 padding-right: 120px;
 position: relative;
 }
-.avatar img{height:90px; width:90px;}
+.avatar{border-radius:100px; overflow:hidden; border:2px solid #fff; width:90px; height:90px;}
+.avatar img{width:100%;}
 .cover.profile .wrapper .friends li {
     float: left;
     margin: 0;
