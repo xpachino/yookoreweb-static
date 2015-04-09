@@ -82,7 +82,7 @@
          <div class="content-body">
          <!--upload picture starts-->
          <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 offset-padding add-margin-bottom">
-         <img id="previewHolder" alt="Upload Image" width="100%" height="200px" style="margin-bottom:10px;"/>
+         <img id="previewHolder" src="img/people/default.gif" alt="Upload Image" width="100%" height="200px" style="margin-bottom:10px;"/>
         <input type="file" name="filePhoto" value="" id="filePhoto" class="required borrowerImageFile" data-errormsg="PhotoUploadErrorMsg">
         </div>
         <!--upload picture ends-->
