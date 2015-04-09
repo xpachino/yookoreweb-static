@@ -93,10 +93,19 @@
             	<span style="margin-right:5px;"><img src="img/icons/halflings-109-calendar.png"></span>November 26, 1960
             </div>
             <div class="prof-list-wrap">
+            	<span style="margin-right:5px;"><img src="img/icons/person.png"></span>Male
+            </div>
+            <div class="prof-list-wrap">
             	<span style="margin-right:5px;"><img src="img/icons/halflings-5-heart.png"></span>Married
             </div>
             <div class="prof-list-wrap">
             	<span style="margin-right:5px;"><img src="img/icons/halflings-62-map-marker.png"></span>Live in Randburg; Jo'Burg.
+            </div>
+             <div class="prof-list-wrap">
+            	<span style="margin-right:5px;"><img src="img/icons/religion.png"></span>Christian
+            </div>
+            <div class="prof-list-wrap">
+            	<span style="margin-right:5px;"><img src="img/icons/interest.png"></span>Interestd in: <span style="color:#06C">Football, Travel, Reading</span>
             </div>
             <div class="prof-list-wrap">
             	<span style="margin-right:5px;"><img src="img/icons/halflings-139-briefcase.png"></span>
