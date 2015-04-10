@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="asideApp">
+<html class="easy-sidebar-active">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,6 +12,8 @@
 <link rel="stylesheet" href="css/jquery.fileupload.css">
 <link rel="stylesheet" href="css/jquery.fileupload-ui.css">
 <link rel="stylesheet" href="css/bootstrap3_player.css">
+
+<link href="css/easy-sidebar.css" rel="stylesheet" type="text/css">
 <!-- CSS adjustments for browsers with JavaScript disabled -->
 <title>Activity Stream</title>
 <noscript><link rel="stylesheet" href="css/jquery.fileupload-noscript.css"></noscript>
@@ -43,41 +45,15 @@
 <script src="js/mikes-modal.min.js" type="text/javascript"></script>
 <script src="js/photo-modal.js" type="text/javascript"></script>
 <!---newer scripts ends-->
-<script>	
-$().ready(function() {
-var $scrollingDiv = $(".advert-wrapper");
-$(window).scroll(function(){
-
-if($(window).scrollTop() > 320 ){ // Start scrolling after this distance from the top – adjust it for what you need (trial and error or a ruler on the screen graduated in pixels ;) )
-$scrollingDiv
-.stop()
-.animate({"marginTop": ($(window).scrollTop() - 30) + "px"}, "slow" );	 // How many pixels to add to the distance
-}
-if($(window).scrollTop() <= 320 ){ // Less than this distance = RESET to original margin – set to 0 here but you can reset to your own original margin – this stops the element raising up too high up the page
-$scrollingDiv
-.stop()
-.animate({"marginTop": "0px"}, "slower" );
-}
-var mql = window.matchMedia("screen and (max-width: 1139px)")
-if (mql.matches){ // if media query matches
- $scrollingDiv
-.stop()
-.animate({"marginTop": "0px"}, "fast" );
-}
-});
-});
-</script>
-<script>
-$(function () {
-  $('[data-toggle="popover"]').popover()
-})
-</script>
 </head>
 
 <body ng-controller="MainCtrl"><!--please take not of the name-->
+<?php require("includes/sidebar.html") ?>
 <?php require("includes/head.php") ?>
 <!--header ends-->
-<div class="container" style="margin-top:62px;"><!--add the margin set off the fixed header-->
+<div class="container">
+<div class="offset-top-margin"></div>
+<!--add the margin set off the fixed header-->
 <div class="row xtra-pad">
 <!--left column-->
 	 <div class="col-lg-3 col-md-3 col-sm-3 left-col">
@@ -89,216 +65,7 @@ $(function () {
 <!--status update card-->
 <?php require("includes/status-update.php") ?>
 <!--status update card ends-->
-<!--activity card001 starts-->
-     	<div class="activity-stream-wrapper">
-        	<div class="activity-card">
-    <!--activity header starts-->
-            <div class="activity-header">
-            	<div class="content-owner-pix"><img src="img/pix.png" width="100%"></div>
-                <div class="content-owner-wrapper">
-                	<div class="content-owner-name">Paul Imisi Akpoduado</div>
-                    <div class="activity-verb">updated his status</div>
-                    <div class="status-update-timestamp">2hours ago</div>
-                </div>
-            <div class="clear"></div>
-            </div>
-   <!--activity header stops-->
-   <!--Photo in post-->
-   			<div class="photo-in-post-wrapper">
-   				<div class="photo-in-status-update">
-<!----******************Modal Quick View of Photo Starts-------************---->
-<!--modal content starts-->
-<div class="mikes-modal" id="pixModal">
-<div class="mike-modal-photo">
-<img class="img-responsive" style="vertical-align:middle" src="img/cricket.jpg">
-</div>
-<div class="description">
-<div class='title-area'>
-<!--activity header starts-->
-            <div class="activity-header">
-            	<div class="content-owner-pix"><img src="img/pix.png" width="100%"></div>
-                <div class="content-owner-wrapper">
-                	<div class="content-owner-name">Paul Imisi Akpoduado</div>
-                    <div class="activity-verb">updated his status</div>
-                    <div class="status-update-timestamp">2hours ago</div>
-                </div>
-            <div class="clear"></div>
-            </div>
-<!--activity header stops-->
-<!--content stats-->
-            <div class="content-stats-wrapper">
-            	<div class="content-stats">82 Likes <span style="margin:0 5px" class="glyphicon glyphicon-asterisk"></span>14 Comments</div>
-                <div class="more-content"><img src="img/icons/more.png" width="40" ></span></div>
-            	<div class="clear"></div>
-            </div>
-<!--interactin bar-->
-            <div class="interaction-bar-xs">
-            	<ul class="list-inline">
-                    <li><span><img src="img/icons/like.png" width="18" ></span> Like</li>
-                    <li><a href="#co3"><span><img style="margin-right:5px;" src="img/icons/comment.png" width="18" ></span>Comment</a></li>
-                    <li><span><img src="img/icons/share.png" width="18" ></span> Share</li>
-            	</ul>
-            </div>
-<!--comment section-->
-<!--comment card00-->
-            <div class="comment-wrapper-xs">
-            	<div class="comment-card">
-                	<div class="comment-owner-pix-xs"><img src="img/people/guy-1.jpg" width="100%"></div>
-                    <div class="comment-details-xs">
-                    	<div class="comment-owner-name-xs">Paul Imisi</div>
-                        <div class="comment-text">cool</div>
-                    </div>
-                <div class="clear"></div>
-                </div>
-                <div class="comment-socials"><span><img src="img/icons/like.png" width="18" ><br>15</span></div>
-            <div class="clear"></div>
-            </div>
-<!--comment card00-->
-            <div class="comment-wrapper-xs">
-            	<div class="comment-card">
-                	<div class="comment-owner-pix-xs"><img src="img/people/woman-4.jpg" width="100%"></div>
-                    <div class="comment-details-xs">
-                    	<div class="comment-owner-name-xs">Paul Imisi</div>
-                        <div class="comment-text">Nigerian woman through her various summits,</div>
-                    </div>
-                <div class="clear"></div>
-                </div>
-                <div class="comment-socials"><span><img src="img/icons/like.png" width="18" ><br>15</span></div>
-            <div class="clear"></div>
-            </div>
-<!--comment card00-->
-            <div class="comment-wrapper-xs">
-            	<div class="comment-card">
-                	<div class="comment-owner-pix-xs"><img src="img/people/guy-2.jpg" width="100%"></div>
-                    <div class="comment-details-xs">
-                    	<div class="comment-owner-name-xs">Paul Imisi</div>
-                        <div class="comment-text">cool</div>
-                    </div>
-                <div class="clear"></div>
-                </div>
-                <div class="comment-socials"><span><img src="img/icons/like.png" width="18" ><br>15</span></div>
-            <div class="clear"></div>
-            </div>
-<!--comment card00-->
-            <div class="comment-wrapper-xs">
-            	<div class="comment-card">
-                	<div class="comment-owner-pix-xs"><img src="img/people/guy-4.jpg" width="100%"></div>
-                    <div class="comment-details-xs">
-                    	<div class="comment-owner-name-xs">Paul Imisi</div>
-                        <div class="comment-text">Nigerian woman through her various summits,</div>
-                    </div>
-                <div class="clear"></div>
-                </div>
-                <div class="comment-socials"><span><img src="img/icons/like.png" width="18" ><br>15</span></div>
-            <div class="clear"></div>
-            </div>
-<!--comment card00-->
-            <div class="comment-wrapper-xs">
-            	<div class="comment-card">
-                	<div class="comment-owner-pix-xs"><img src="img/people/woman-3.jpg" width="100%"></div>
-                    <div class="comment-details-xs">
-                    	<div class="comment-owner-name-xs">Paul Imisi</div>
-                        <div class="comment-text">cool</div>
-                    </div>
-                <div class="clear"></div>
-                </div>
-                <div class="comment-socials"><span><img src="img/icons/like.png" width="18" ><br>15</span></div>
-            <div class="clear"></div>
-            </div>
-<!--comment card00-->
-            <div class="comment-wrapper-xs">
-            	<div class="comment-card">
-                	<div class="comment-owner-pix-xs"><img src="img/people/guy-6.jpg" width="100%"></div>
-                    <div class="comment-details-xs">
-                    	<div class="comment-owner-name-xs">Paul Imisi</div>
-                        <div class="comment-text">Nigerian woman through her various summits,</div>
-                    </div>
-                <div class="clear"></div>
-                </div>
-                <div class="comment-socials"><span><img src="img/icons/like.png" width="18" ><br>15</span></div>
-            <div class="clear"></div>
-            </div>
-<!--post comment-->
-            <div class="post-comment-wrapper-xs" id="co3">
-            	<div class="comment-owner-pix-xs"><img src="img/people/woman-9.jpg" width="100%"></div>
-                <div class="post-comment-form-wrap-xs">
-               	<div class="post-comment-card">
-                	 <div class="post-comment-form">
-                      <textarea rows="1" placeholder="Add a comment"></textarea>
-                	</div>
-                     <div class="add-comment-socials"><img src="img/icons/photo-grey.png" width="18" >
-                    </div>
-                <div style="clear:left;"></div>
-                </div>
-                <div class="press-enter">Press enter to post comment</div>
-              </div>
-            <div class="clear"></div>
-            </div>
-<!--post comment ends--->
-            <div class="more-comments">See 25 more</div>
-            </div>
-</div>
-
-<!--modal content ends-->
-</div></div>
-<!----******************Modal Quick View Ends-----------**********---->
-<p class="allow-modal"><a id="open-mikes-modal" href="picture_full_view.php" style="cursor:pointer;"><img class="img-responsive" src="img/cricket.jpg"></a></p>
-<p class="deny-modal"><a href="picture_full_view.php" style="cursor:pointer;"><img class="img-responsive" src="img/cricket.jpg"></a></p>
-               
-            </div>
-            <div class="text-content">
-            The project "Women For Change Initiative" was established in 2010 to sensitise, empower and mobilise women to participate actively in governance.
-			</div>
-            <!--content stats-->
-            <div class="content-stats-wrapper">
-            	<div class="content-stats">82 Likes <span style="margin:0 5px" class="glyphicon glyphicon-asterisk"></span>14 Comments</div>
-                <div class="more-content"><img src="img/icons/more.png" width="40" ></span></div>
-            	<div class="clear"></div>
-            </div>
-            <!--interactin bar-->
-            <div class="interaction-bar">
-            	<ul class="list-inline">
-                    <li><span><img src="img/icons/like.png" width="18" ></span> Like</li>
-                    <li><span><img src="img/icons/comment.png" width="18" ></span> Comment</li>
-                    <li><span><img src="img/icons/share.png" width="18" ></span> Share</li>
-            	</ul>
-            </div>
-            <!--comment section-->
-            <!--comment card00-->
-            <div class="comment-wrapper">
-            	<div class="comment-card">
-                	<div class="comment-owner-pix"><img src="img/pix.jpg" width="100%"></div>
-                    <div class="comment-details">
-                    	<div class="comment-owner-name">Paul Imisi</div>
-                        <div class="comment-text">She has struggled relentlessly to awaken and empower the Nigerian woman through her various summits,</div>
-                    </div>
-                <div class="clear"></div>
-                </div>
-                <div class="comment-socials"><span><img src="img/icons/like.png" width="18" ><br>15</span></div>
-            <div class="clear"></div>
-            </div>
-            <!--post comment-->
-            <div class="post-comment-wrapper">
-            	<div class="comment-owner-pix"><img src="img/pix.jpg" width="100%"></div>
-                <div class="post-comment-form-wrap">
-               	<div class="post-comment-card">
-                	 <div class="post-comment-form">
-                      <textarea rows="1" placeholder="Add a comment"></textarea>
-                	</div>
-                     <div class="add-comment-socials">
-                    <img src="img/icons/location.png" width="18" ><img src="img/icons/photo-grey.png" width="18" >
-                    </div>
-                <div style="clear:left;"></div>
-                </div>
-                <div class="press-enter">Press enter to post comment</div>
-              </div>
-            <div class="clear"></div>
-            </div>
-            <!--post comment ends--->
-            <div class="more-comments">See 25 more</div>
-            </div>
-        </div>
-<!--activity card00 ends-->
+ <?php require("includes/photo-in-post.php") ?>
 <!--activity card0 starts-->
      	<div class="activity-stream-wrapper">
         	<div class="activity-card">
@@ -465,7 +232,7 @@ $(function () {
             </div>
    <!--activity header stops-->
             <div class="text-content">
-            The project "Women For Change Initiative" was established in 2010 to sensitise, empower and mobilise women to participate actively in governance.<br><br>
+            The project "Women For Change Initiative" was established in 2010 to sensitise, ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd empower and mobilise women to participate actively in governance.<br><br>
 Dame Patience Jonathan is fighting to make Life better for women in the country and totally restore the dignity of womanhood.
 			</div>
             <!--content stats-->
@@ -721,5 +488,7 @@ Dame Patience Jonathan is fighting to make Life better for women in the country 
 <!--[if (gte IE 8)&(lt IE 10)]>
 <script src="js/cors/jquery.xdr-transport.js"></script>
 <![endif]-->
+<script src="js/jquery.detect_swipe.js"></script> 
+<script src="js/easy-side-bar-toggle.js"></script> 
 </body>
 </html>

@@ -2,9 +2,7 @@
 <div class="container">
     	<div class="logo-menu">
         <img class="hide-div" src="img/icons/logo.png" width"108" height="30">
-        <a href="#" ng-click="openAside('left')">
-        <img class="show-div" src="img/icons/menu.png" width="27" height="22" />
-        </a>
+        <button class="easy-sidebar-toggle show-div" style="background:transparent; border:0;"><img src="img/icons/menu.png" width="27" height="22"></button>
         </div>
       <div style="float:right; display:inline-block; border-left:0px solid #ddd; padding:15px 0 6px 0; text-align:right; position:relative;">
             <span class="top-icons"><a href="#"><img src="img/icons/noti.png" width="100%" ></a></span>

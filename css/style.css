@@ -8,7 +8,9 @@ body {background:#eee; font-family:Arial, Helvetica, sans-serif; font-size:14px;
 .container{width:100%; max-width:1140px; margin:0 auto; padding:0;}
 .row {margin-left: 0px; margin-right: 0px;
 }
-
+input[type=file] {
+  display: inline-block !important;
+}
 a:active,a:hover{outline:0}
 .clear{clear:both;}
 .list-status>li {
@@ -249,7 +251,7 @@ margin-bottom:20px;
 .span-about{margin-right:10px;}
 
 
-.profile-info-wrapper{border:1px solid #ddd; padding:15px; margin-bottom:10px; background:#f5f5f5; border-radius:4px; text-align:center;}
+.profile-info-wrapper{border:1px solid #ddd; padding:15px; margin-bottom:10px; background:#fff; border-radius:4px; text-align:center;}
 .profile-pix-card{ text-align:center; margin-bottom:5px;}
 .profile-pix-img{width:60px; height:60px; background:#000; display:inline-block; border-radius:100px; overflow:hidden;}
 .profile-name{font-weight:700; color:#000; font-size:18px;}
@@ -311,7 +313,7 @@ margin-bottom:20px;
 .status-update-timestamp{display:inline-block; font-size:12px; color:#999; padding:0px 10px 2px 15px; line-height:14px; margin:0px 0 0 7px; background:url(../img/icons/status-xs.png) no-repeat;}
 
 /**status content types****/
-.text-content{padding:0; margin-bottom:15px;}
+.text-content{padding:0; margin-bottom:15px; word-wrap:break-word;}
 .photo-in-post-wrapper{margin:0px -15px 15px -15px;}
 .photo-in-status-update{width:100%; background:#fff; overflow:hidden; text-align:center; border-top:1px solid #f5f5f5; border-bottom:1px solid #f5f5f5;}
 .photo-in-status-update-auto{width:100%; background:#fff; overflow:hidden; text-align:center; border-top:1px solid #f5f5f5; border-bottom:1px solid #f5f5f5;}
@@ -468,7 +470,7 @@ margin-bottom:0;
 .nav>li>a {
 position: relative;
 display: block;
-padding: 10px 7px;
+padding: 10px 3px;
 }
 }
 @media (min-width: 480px) and (max-width: 859px) {
